@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 0 32px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#nav-top {
+  display: block;
+  background-color: #f8f9fa;
+  padding: 20px 10px;
+}
+#nav-top .nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+#nav-top .nav-top .nav-top-icons i {
+  font-size: 25px;
+}
+#nav-top .nav-top .nav-top-text {
+  display: flex;
+  gap: 20px;
+}
+#nav-top .nav-top .nav-top-text i {
+  margin-right: 15px;
+  color: #f59021;
+}
+
+nav {
+  background: white;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+nav .navbar .nav-logo h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+}
+nav .navbar .nav-logo h2 span {
+  color: #f59021;
+  margin: 0;
+  padding: 0;
+}
+nav .navbar .nav-menu {
+  display: none;
+}
+nav .navbar .nav-list {
+  display: flex;
+}
+nav .navbar .nav-list li {
+  padding: 40px 15px;
+  list-style: none;
+}
+nav .navbar .nav-list li span {
+  color: #f59021;
+}
+nav .navbar .nav-list li a {
+  text-decoration: none;
+  color: #000000;
+}
+nav .navbar .nav-list li i {
+  margin-left: 10px;
+}
+
+.myModal {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.myModal .modal-content {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+}
+.myModal .modal-content .modal-list li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+.myModal .modal-content .modal-list li a {
+  text-decoration: none;
+  color: #000000;
+}
+.myModal .modal-content span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  cursor: pointer;
+}/*# sourceMappingURL=detail.css.map */

@@ -1,0 +1,47 @@
+{
+  "services": [
+      {
+          "id": 1,
+          "images": "assets/images/model_1_bg.jpg.webp",
+          "title": "Wild West Hoodie",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 39.99
+      },
+      {
+          "id": 2,
+          "images": "assets/images/model_2_bg.jpg.webp",
+          "title": "Wild West Hoodie",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 49.99
+      },
+      {
+          "id": 3,
+          "images": "assets/images/model_3_bg.jpg.webp",
+          "title": "Wild West Hoodie",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 29.99
+      },
+      {
+          "id": 4,
+          "images": "assets/images/model_4_bg.jpg.webp",
+          "title": "Five Reasons to Stay at Villa Resort",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 99.99
+      },
+      {
+          "id": 5,
+          "images": "assets/images/model_5_bg.jpg.webp",
+          "title": "lorem ipsum",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 79.99
+      },
+      {
+          "id": 6,
+          "images": "assets/images/model_1_bg.jpg.webp",
+          "title": "test",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+          "price": 59.99
+      }
+  ],
+  "favorites": []
+}

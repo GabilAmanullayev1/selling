@@ -1,0 +1,219 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding: 0 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#nav-top {
+    display: block;
+    background-color: $nav_bg;
+    padding: 20px 10px;
+
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-top-icons {
+            i {
+                font-size: 25px;
+
+            }
+        }
+
+        .nav-top-text {
+            display: flex;
+            gap: 20px;
+
+            i {
+                margin-right: 15px;
+                color: $orange;
+            }
+        }
+    }
+
+}
+
+nav {
+    background: white;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+
+        .nav-logo {
+            h2 {
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 48px;
+
+                span {
+                    color: $orange;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .nav-menu{
+            display: none;
+        }
+        .nav-list {
+            display: flex;
+
+            li {
+                padding: 40px 15px;
+                list-style: none;
+
+                span {
+                    color: $orange;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+                i{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+#banner {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 100%),url(../images/hero_2.jpg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .banner-text {
+            width: 55%;
+
+            h1 {
+                font-size: 80px;
+                color: white;
+                line-height: 96px;
+                font-weight: 900;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+            }
+        }
+
+        .banner-btn {
+            button {
+                padding: 15px 40px;
+                font-size: 14px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+            .btn1{
+                background-color: transparent;
+                border: 3px solid white;
+                color: white;
+            }
+        }
+    }
+}
+.myModal{
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    .modal-content{
+        position: relative;
+        padding: 20px;
+        background-color: white;
+        width: 100%;
+        .modal-list{
+            li{
+                list-style: none;
+                padding-bottom: 30px;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+        span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }
+}
+#products{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .products{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        .products-text{
+            h2{
+                padding-bottom: 50px;
+            }
+            input{
+                padding: 10px;
+                min-width: 250px;
+            }
+        }
+        .product-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+            .product-image{
+                width: 100%;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    nav{
+        .navbar{
+            padding: 20px;
+            .nav-menu{
+                display: block;
+                i{
+                    font-size: 26px;
+                    cursor: pointer;
+                }
+            }
+            .nav-list{
+                display: none;
+            }
+        }
+    }
+
+   
+  }
+  
