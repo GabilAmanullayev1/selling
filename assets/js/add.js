@@ -23,7 +23,41 @@ fetch(`http://localhost:3000/services`)
 
         });
     })
-    function deleteEl(id){
-        axios.delete(`http://localhost:3000/services/${id}`)
-        window.location.reload()
+file.addEventListener('input', (e) => {
+    let file = e.target.files[0];
+    if (file) {
+        let reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            image.src = reader.result;
+        };
     }
+});
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (title.value && desc.value) { // Corrected variable name
+        let obj = {};
+        let reader = new FileReader();
+        let src = file.files[0];
+        reader.onload = (e) => {
+            obj = {
+                image: e.target.result,
+                title: title.value,
+                description: desc.value, // Corrected variable name
+            };
+            axios.post("http://localhost:3000/services", obj)
+                .then(res => {
+                    window.location = "./index.html";
+                });
+        };
+        reader.readAsDataURL(src);
+    } else {
+        alert("Butun xanalar doldurulmalidir!!");
+    }
+});
+
+function deleteEl(id) {
+    axios.delete(`http://localhost:3000/services/${id}`)
+    window.location.reload()
+}
