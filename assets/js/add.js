@@ -42,7 +42,7 @@ form.addEventListener("submit", (event) => {
         let src = file.files[0];
         reader.onload = (e) => {
             obj = {
-                image: e.target.result,
+                images: e.target.result,
                 title: title.value,
                 description: desc.value, // Corrected variable name
             };
